@@ -1,0 +1,12 @@
+[
+  {
+    "ContainingType": "Online_Store.API.Controllers.UsersController",
+    "Method": "getAllUsersAsync",
+    "RelativePath": "Users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
