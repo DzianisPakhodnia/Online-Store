@@ -1,0 +1,27 @@
+version: '3.9'
+
+services:
+  postgres-db:
+    image: postgres:15
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 4002
+      POSTGRES_DB: UsersDeploy
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  online-store-api:
+    build: ./backend/Online-Store/Online-Store.API
+    ports:
+      - "5000:8080"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__DefaultConnection: "Host=postgres-db;Port=5432;Database=UsersDeploy;Username=postgres;Password=4002"
+    depends_on:
+      - postgres-db
+
+volumes:
+  pgdata:

@@ -23,7 +23,6 @@ E:\Online Store\Online Store\backend\Online-Store\Online-Store.API\obj\Debug\net
 E:\Online Store\Online Store\backend\Online-Store\Online-Store.API\obj\Debug\net8.0\staticwebassets.build.json.cache
 E:\Online Store\Online Store\backend\Online-Store\Online-Store.API\obj\Debug\net8.0\staticwebassets.development.json
 E:\Online Store\Online Store\backend\Online-Store\Online-Store.API\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-E:\Online Store\Online Store\backend\Online-Store\Online-Store.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 E:\Online Store\Online Store\backend\Online-Store\Online-Store.API\obj\Debug\net8.0\Online-S.110DD810.Up2Date
 E:\Online Store\Online Store\backend\Online-Store\Online-Store.API\obj\Debug\net8.0\Online-Store.API.dll
 E:\Online Store\Online Store\backend\Online-Store\Online-Store.API\obj\Debug\net8.0\refint\Online-Store.API.dll
