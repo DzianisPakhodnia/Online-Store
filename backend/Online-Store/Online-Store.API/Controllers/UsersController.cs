@@ -19,7 +19,6 @@ namespace Online_Store.API.Controllers
         public async Task<IActionResult>  getAllUsersAsync()
         {
             var users = await _postgresDbContext.Users.ToListAsync();
-
             return Ok(users);
         }
         
