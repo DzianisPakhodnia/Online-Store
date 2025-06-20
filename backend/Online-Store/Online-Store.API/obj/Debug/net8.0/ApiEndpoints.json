@@ -1,8 +1,8 @@
 [
   {
     "ContainingType": "Online_Store.API.Controllers.UsersController",
-    "Method": "getAllUsersAsync",
-    "RelativePath": "Users",
+    "Method": "GetAllUsersAsync",
+    "RelativePath": "api/Users",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
