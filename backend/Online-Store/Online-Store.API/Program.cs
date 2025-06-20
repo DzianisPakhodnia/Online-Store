@@ -3,8 +3,6 @@ using Online_Store.API.Persistence;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.WebHost.UseUrls("http://+:8080"); // добавлено
-
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -14,13 +12,15 @@ builder.Services.AddDbContext<PostgresDbContext>(options =>
 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowReactApp", policy =>
+    options.AddPolicy("AllowFrontend", policy =>
     {
-        policy.WithOrigins("http://localhost:3000", "http://localhost:8080")
+        policy.WithOrigins("http://denpa.tw1.ru:8080")
               .AllowAnyHeader()
               .AllowAnyMethod();
     });
 });
+builder.WebHost.UseUrls("http://0.0.0.0:8080");
+
 
 var app = builder.Build();
 
@@ -38,7 +38,7 @@ using (var scope = app.Services.CreateScope())
 
 app.UseRouting(); // добавлено
 
-app.UseCors("AllowReactApp");
+app.UseCors("AllowFrontend");
 
 app.UseAuthorization();
 

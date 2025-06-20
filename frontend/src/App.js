@@ -8,7 +8,7 @@ function App() {
   const fetchUsers = () => {
     setLoading(true);
     setError(null);
-    fetch("http://localhost:5000/api/users")
+    fetch("http://denpa.tw1.ru:5000/api/users")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Ошибка загрузки пользователей");
